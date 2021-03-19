@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <title>Центр адаптации ГК «Росатом»</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img alt="ГК «Росатом»" src="{{ url_for('static', filename='img/rosatom_logo.jpg') }}">
+    <div class="smallname"
+         style="border-width: 0 0 0 3px; border-style: solid; padding-left: 10px;">
+        <p><span>РОСАТОМ</span></p>
+        <p><span>ЦЕНТР</span></p>
+        <p><span>CASE-IN</span></p>
+    </div>
+    <div>
+        <select name="UserName">
+            <option selected value="UserName">
+                UserName
+            </option>
+            <option value="Exit">
+                Exit
+            </option>
+        </select>
+    </div>
+    <img alt="Фото профиля" src="{{ url_for('static', filename='img/dan2.png') }}">
+    <hr>
+</header>
+<br>
+<div>
+    <div>
+        <a href="">О РОСАТОМ</a>
+    </div>
+    <br>
+    <div>
+        <a href="{{ url_for('courses') }}">КУРСЫ</a>
+    </div>
+    <br>
+    <div>
+        <a href="">ТЕСТЫ</a>
+    </div>
+    <br>
+    <div>
+        <a href="">НОВОСТИ</a>
+    </div>
+</div>
+<div class="userform">
+    <form action="#" enctype="multipart/form-data" method="post">
+        <div class="userform">
+            <img alt="Фото профиля" src="{{ url_for('static', filename='img/dan.jpg') }}">
+            <h2>Профиль</h2>
+            <div>
+                <p><input name="UserFullName" type="text" value="UserFullName"></p>
+                <p><input name="UserPlaceOfWork" type="text" value="UserPlaceOfWork"></p>
+                <p><input name="UserPost" type="text" value="UserPost"></p>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="userform">
+            <h2>Твой прогресс</h2>
+            <hr>
+            <div>
+                <p><span>RoadMap:</span></p>
+                <p><span>Общий прогресс:</span></p>
+            </div>
+        </div>
+        <br>
+        <div class="userform">
+            <h2>История прохождения</h2>
+            <hr>
+            <div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="userform">
+        <form action="#" enctype="multipart/form-data" method="post">
+            <div>
+                <h2>О себе</h2>
+                <textarea cols="100" name="text" rows="10"></textarea>
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <hr class="userform">
+    <p>2008-2021. Все права защищены. <a href="">Государственная корпорация по атомной энергии "Росатом"</a></p>
+    <p>При использовании материалов <a href="https://www.rosatom.ru">www.rosatom.ru</a></p>
+    <p><a href="http://google.com" target="blank">Сообщить о коррупции</a>:800-100-07-07</p>
+    <br>
+    <br>
+    <h3>Следить за нами:</h3>
+</footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+h1 {
+    border: 2px #eee solid;
+    color: brown;
+    text-align: center;
+    padding: 10px;
+}
+
+.smallname p {
+	font-size: 15px;
+	color: blue;
+}
+
+.userform {
+	border: 5px solid #1111
+}
